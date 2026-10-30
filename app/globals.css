@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0e110f;
+  --color-panel: #151916;
+  --color-tile: #1d221e;
+  --color-line: #2c332e;
+  --color-paper: #eeebe0;
+  --color-muted: #a3a99f;
+  --color-signal: #ffc400;
+  --color-live: #63e08f;
+
+  --font-display: var(--font-big-shoulders);
+  --font-sans: var(--font-plex-sans);
+  --font-mono: var(--font-plex-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-signal);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-signal);
+  outline-offset: 3px;
+}
+
+.thin-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line) transparent;
+}
+
+.on-signal :focus-visible {
+  outline-color: var(--color-ink);
+}
+
+/* Split-flap name board */
+.flap {
+  container-type: inline-size;
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 3px;
+  background: linear-gradient(var(--color-tile) 50%, #181c19 50%);
+  perspective: 500px;
+}
+
+.flap::after {
+  content: "";
+  position: absolute;
+  inset: 50% 0 auto;
+  height: 2px;
+  margin-top: -1px;
+  background: var(--color-ink);
+}
+
+.flap--blank {
+  background: var(--color-signal);
+}
+
+.flap > span {
+  font-family: var(--font-big-shoulders);
+  font-size: 92cqw;
+  font-weight: 800;
+  line-height: 1;
+  transform-origin: 50% 50%;
+}
+
+@keyframes flap-in {
+  from {
+    opacity: 0;
+    transform: rotateX(-92deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .flap > span {
+    animation: flap-in 480ms cubic-bezier(0.2, 0.85, 0.3, 1.15) backwards;
+    animation-delay: calc(var(--i) * 55ms + 100ms);
+    transition: transform 520ms cubic-bezier(0.2, 0.85, 0.3, 1.05);
+  }
+
+  .flap:hover > span {
+    transform: rotateX(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Save as PDF gives a clean, ink-friendly copy of the page */
+@media print {
+  :root {
+    --color-ink: #fff;
+    --color-paper: #111;
+    --color-muted: #444;
+    --color-signal: #111;
+    --color-live: #111;
+    --color-panel: #fff;
+    --color-tile: #fff;
+    --color-line: #bbb;
+  }
+
+  /* Sizes are in rem, so this scales the whole page down for paper */
+  html {
+    font-size: 12px;
+  }
+
+  .no-print,
+  img,
+  h1 > [aria-hidden] {
+    display: none !important;
+  }
+
+  h1 > .sr-only {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    clip-path: none;
+    overflow: visible;
+    font-family: var(--font-display);
+    font-size: 40pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    white-space: normal;
+  }
+
+  .bg-signal {
+    background: none;
+    color: #111;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  article,
+  li {
+    break-inside: avoid;
+  }
+}
