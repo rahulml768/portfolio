@@ -40,7 +40,7 @@ export const profile = {
   resumeUrl: "",
   headline: "Software that real operations run on.",
   intro:
-    "I'm a full stack developer and AI engineer. For 3+ years I've built ERP modules, healthcare compliance platforms and AI products like Canvas Client, Zavorik and Agentra.",
+    "I'm a full stack developer and AI engineer. For 3+ years I've built ERP modules, healthcare compliance platforms and AI products like Canvas Client, Agentra and Agent 69.",
   facts: [
     { label: "Now", value: "Nucleo Analytics, Product team" },
     { label: "Experience", value: "3+ years" },
@@ -53,7 +53,7 @@ export const profile = {
 const emailSubject = "Opportunity for Rahul Mittal";
 const emailBody = `Hi Rahul,
 
-I came across your portfolio and was impressed by your work in full stack development and AI engineering, especially products like Canvas Client and Zavorik.
+I came across your portfolio and was impressed by your work in full stack development and AI engineering, especially products like Canvas Client and Agentra.
 
 We are looking for someone with your experience, and I would like to discuss an opportunity with you.
 
@@ -144,12 +144,13 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "zavorik",
-    name: "Zavorik",
+    id: "agentra",
+    name: "Agentra",
+    subtitle: "Formerly Zavorik",
     sector: "AI employees",
     status: "live",
-    url: "https://zavorik.com/",
-    urlLabel: "zavorik.com",
+    url: "https://agentra.live/",
+    urlLabel: "agentra.live",
     hook: "Give us your website, and we'll give you a team of AI employees.",
     reach: "Real users",
     summary:
@@ -183,28 +184,28 @@ export const projects: Project[] = [
       "Integrations",
     ],
     image: {
-      src: "/work/zavorik.webp",
-      alt: "Zavorik website showing AI teams working on a product launch",
+      src: "/work/agentra.webp",
+      alt: "Agentra website showing AI teams working on a product launch",
     },
   },
   {
-    id: "agentra",
-    name: "Agentra",
-    subtitle: "Built by Mohit, Rahul and Daksh",
+    id: "agent-69",
+    name: "Agent 69",
+    subtitle: "Formerly Agentra · Built by Mohit, Rahul and Daksh",
     role: "I built the entire backend, and we also wrote some of the platform's agents ourselves in Python. Mohit built the blockchain side and Daksh built the frontend.",
     sector: "On-chain AI agents",
     status: "live",
-    url: "https://www.agentra.live/",
-    urlLabel: "agentra.live",
+    url: "https://www.agentra69.in/",
+    urlLabel: "agentra69.in",
     hook: "AI agents deployed as on-chain assets that earn every time they are called.",
     award: {
       title: "Community Award",
       event: "0G APAC Hackathon",
-      detail: "One of 23 winners from 293 submissions, with builders from 38 countries and regions.",
+      detail: "Won under its earlier name, Agentra. One of 23 winners from 293 submissions, with builders from 38 countries and regions.",
       href: "https://0g.ai/blog/0g-apac-hackathon-recap",
     },
     summary:
-      "Infrastructure on the 0G network where creators deploy AI agents as iNFTs. Users call those agents directly, and creators and their agents get paid for each call.",
+      "On-chain infrastructure where creators deploy AI agents as iNFTs. Users call those agents directly, and creators and their agents get paid for each call.",
     problem:
       "Someone who builds a useful AI agent has no simple way to prove they own it, set a price for it or get paid each time it runs.",
     thinking: [
@@ -221,7 +222,7 @@ export const projects: Project[] = [
     points: [
       "Deploy Studio to configure prompts, models and tools, then push an agent live in one click.",
       "Every agent gets a live MCP endpoint, with permissions, usage limits and automatic failover handled behind it.",
-      "Each execution is metered, and creators and agents earn 0G per call with a transparent billing history.",
+      "Each execution is metered, and creators and agents earn tokens per call with a transparent billing history.",
       "Agent metadata, configurations and execution logs are anchored to 0G Storage.",
     ],
     tags: [
@@ -233,14 +234,50 @@ export const projects: Project[] = [
       "React",
       "Solidity",
       "Ethers",
-      "0G Chain",
+      "iNFT",
       "MCP",
       "Microservices",
       "System design",
     ],
     image: {
-      src: "/work/agentra.webp",
-      alt: "Agentra website with the headline You built the Agent, We made it an Asset",
+      src: "/work/agent-69.webp",
+      alt: "Agent 69 website with the headline You built the Agent, We made it an Asset",
+    },
+  },
+  {
+    id: "two-girls-garage",
+    name: "Two Girls Garage",
+    role: "I built the store, including FTP and SFTP product synchronization and the Shippo, Authorize.Net and Vega integrations.",
+    sector: "Auto parts e-commerce",
+    status: "live",
+    url: "https://2girlsgarage.com/",
+    urlLabel: "2girlsgarage.com",
+    hook: "A heavy-duty auto parts store with supplier product sync, shipping and payments built in.",
+    summary:
+      "An online store for heavy-duty auto parts in Cincinnati, Ohio, with a large catalogue from many manufacturers and a Buy One, Give One program that sponsors racers.",
+    problem:
+      "A catalogue this large, from this many manufacturers, can't be kept current by hand. Products have to stay in sync while customers browse, pay and get their orders shipped.",
+    thinking: [
+      {
+        title: "Let supplier data drive the catalogue",
+        why: "Products sync over FTP and SFTP, so the store follows supplier data instead of depending on manual entry.",
+      },
+      {
+        title: "Giving is part of the purchase",
+        why: "With Buy One, Give One, a buyer chooses a racer to receive the same or an equivalent part, and racers get a race-grade substitute when the item isn't one.",
+      },
+    ],
+    pointsLabel: "What I built",
+    points: [
+      "Product synchronization from supplier feeds over FTP and SFTP.",
+      "Shippo integration for shipping.",
+      "Authorize.Net integration for payments.",
+      "Vega integration.",
+    ],
+    tags: ["Next.js", "E-commerce", "FTP", "SFTP", "Product sync", "Shippo", "Authorize.Net", "Vega"],
+    image: {
+      src: "/work/two-girls-garage.webp",
+      alt: "Two Girls Garage store with featured auto parts and the headline Heavy Duty Auto Parts Supplier",
     },
   },
   {
@@ -417,7 +454,7 @@ export const principles = [
   {
     title: "An agent is only as good as its context.",
     why: "Getting an agent to work well is mostly about what it is given: what it knows, which tools it can call and when a person has to approve. I treat that as engineering work, not prompt tweaking.",
-    proof: "Agentra, Zavorik",
+    proof: "Agent 69, Agentra",
   },
   {
     title: "Access control is a product decision.",

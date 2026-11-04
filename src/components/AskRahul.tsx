@@ -15,7 +15,7 @@ const MAX_MESSAGES = 12;
 const suggestions = [
   "Write an email to Rahul",
   "Show me his AI work",
-  "What did he build on Agentra?",
+  "What did he build on Agent 69?",
 ];
 
 function ActionCard({ action }: { action: Action }) {
