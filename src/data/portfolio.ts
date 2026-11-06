@@ -43,7 +43,7 @@ export const profile = {
     "I'm a full stack developer and AI engineer. I've built ERP modules, healthcare compliance platforms and AI products like Canvas Client, Agentra and Agent 69.",
   facts: [
     { label: "Now", value: "Nucleo Analytics, Product team" },
-    { label: "Core stack", value: "React, Next.js, Node.js, Python, RAG, LangChain" },
+    { label: "Core stack", value: "React, Next.js, Node.js, Python, RAG, LangChain, Solidity, Web3" },
     { label: "Focus", value: "AI engineering, microservices, system design" },
     { label: "Recognition", value: "Community Award, 0G APAC Hackathon" },
   ],
