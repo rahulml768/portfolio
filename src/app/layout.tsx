@@ -23,9 +23,9 @@ const plexMono = IBM_Plex_Mono({
   weight: ["400", "500"],
 });
 
-const title = "Rahul Mittal | Senior Full Stack AI Engineer";
+const title = "Rahul Mittal | Full Stack Developer & AI Engineer";
 const description =
-  "Senior full stack AI engineer in Chandigarh building ERP modules, healthcare compliance platforms and agentic AI products with React, Next.js and Node.js.";
+  "Full stack developer and AI engineer in Chandigarh building ERP modules, healthcare compliance platforms and agentic AI products with React, Next.js and Node.js.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

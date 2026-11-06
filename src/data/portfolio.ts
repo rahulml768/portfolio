@@ -27,7 +27,7 @@ export type Project = {
 
 export const profile = {
   name: "Rahul Mittal",
-  role: "Senior Full Stack AI Engineer",
+  role: "Full Stack Developer & AI Engineer",
   location: "Chandigarh, India",
   photo: { src: "/rahul-mittal.webp", alt: "Portrait of Rahul Mittal" },
   email: "rahulmittal.768@gmail.com",
@@ -40,7 +40,7 @@ export const profile = {
   resumeUrl: "",
   headline: "Software that real operations run on.",
   intro:
-    "I'm a senior full stack AI engineer. I've built ERP modules, healthcare compliance platforms and AI products like Canvas Client, Agentra and Agent 69.",
+    "I'm a full stack developer and AI engineer. I've built ERP modules, healthcare compliance platforms and AI products like Canvas Client, Agentra and Agent 69.",
   facts: [
     { label: "Now", value: "Nucleo Analytics, Product team" },
     { label: "Core stack", value: "React, Next.js, Node.js, Python, RAG, LangChain" },
