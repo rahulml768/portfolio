@@ -27,7 +27,7 @@ export type Project = {
 
 export const profile = {
   name: "Rahul Mittal",
-  role: "Full Stack Developer & AI Engineer",
+  role: "Senior Full Stack AI Engineer",
   location: "Chandigarh, India",
   photo: { src: "/rahul-mittal.webp", alt: "Portrait of Rahul Mittal" },
   email: "rahulmittal.768@gmail.com",
@@ -40,10 +40,9 @@ export const profile = {
   resumeUrl: "",
   headline: "Software that real operations run on.",
   intro:
-    "I'm a full stack developer and AI engineer. For 3+ years I've built ERP modules, healthcare compliance platforms and AI products like Canvas Client, Agentra and Agent 69.",
+    "I'm a senior full stack AI engineer. I've built ERP modules, healthcare compliance platforms and AI products like Canvas Client, Agentra and Agent 69.",
   facts: [
     { label: "Now", value: "Nucleo Analytics, Product team" },
-    { label: "Experience", value: "3+ years" },
     { label: "Core stack", value: "React, Next.js, Node.js, Python, RAG, LangChain" },
     { label: "Focus", value: "AI engineering, microservices, system design" },
     { label: "Recognition", value: "Community Award, 0G APAC Hackathon" },
@@ -491,8 +490,8 @@ export const experience = [
   {
     company: "Ultivic Pvt",
     role: "Full Stack Developer",
-    place: "Mohali, India",
     period: "07/2025 – 2026",
+    place: "Mohali, India",
     about: "Web and mobile application development.",
     points: [
       "Developed and enforced role-based access control with granular permissions for secure, multi-level data access.",
@@ -503,8 +502,8 @@ export const experience = [
   {
     company: "Onfinity",
     role: "Full Stack Developer",
-    place: "Mohali, India",
     period: "08/2023 – 07/2025",
+    place: "Mohali, India",
     about: "Web application development. Formerly Vienna Advantage.",
     points: [
       "Improved backend processing time by 30% by optimizing database queries and server-side logic.",
