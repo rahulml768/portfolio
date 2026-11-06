@@ -475,6 +475,19 @@ export const principles = [
 export const closing =
   "If you're building something people rely on every day and need someone who can own it from the database to the interface, I'd like to hear about it.";
 
+export const blockchain = {
+  headline: "Blockchain and smart contracts",
+  intro:
+    "I work across Web3 as well, from Solidity smart contracts on Ethereum-compatible chains to the backends and apps that talk to them.",
+  skills: [
+    { name: "Solidity", detail: "Writing and testing smart contracts" },
+    { name: "Smart contracts", detail: "Token, NFT and payment logic on-chain" },
+    { name: "Ethereum & EVM chains", detail: "Deploying to Ethereum-compatible networks" },
+    { name: "Ethers.js & Web3", detail: "Connecting backends and frontends to contracts and wallets" },
+  ],
+  proof: "Agent 69, where AI agents are minted as iNFTs and paid per call on-chain",
+};
+
 export const experience = [
   {
     company: "Nucleo Analytics",
@@ -532,6 +545,7 @@ export const skills = [
   },
   { group: "Architecture", items: ["Microservices", "System design"] },
   { group: "Cloud", items: ["AWS", "Cloudflare"] },
+  { group: "Blockchain", items: ["Solidity", "Smart contracts", "Ethereum", "Ethers.js", "Web3"] },
   { group: "Databases", items: ["MongoDB", "SQL", "Mongoose"] },
   { group: "Tools", items: ["GitHub", "Postman", "CI/CD pipelines", "Elasticsearch"] },
   {

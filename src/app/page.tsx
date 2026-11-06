@@ -1,4 +1,5 @@
 import { AskRahul } from "@/components/AskRahul";
+import { Blockchain } from "@/components/Blockchain";
 import { ErpModules } from "@/components/ErpModules";
 import { Experience } from "@/components/Experience";
 import { Hero } from "@/components/Hero";
@@ -13,6 +14,7 @@ export default function Home() {
       <Work />
       <ErpModules />
       <Principles />
+      <Blockchain />
       <Experience />
     </main>
   );

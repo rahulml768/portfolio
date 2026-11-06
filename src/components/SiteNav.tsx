@@ -8,6 +8,7 @@ const nav = [
   { id: "work", label: "Work" },
   { id: "erp", label: "ERP", desktopOnly: true },
   { id: "thinking", label: "Thinking", desktopOnly: true },
+  { id: "blockchain", label: "Web3", desktopOnly: true },
   { id: "experience", label: "Experience" },
   { id: "contact", label: "Contact" },
 ];
