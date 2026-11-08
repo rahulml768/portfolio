@@ -54,8 +54,13 @@ export function SiteNav({ resumeUrl }: { resumeUrl: string }) {
         ))}
         {resumeUrl && (
           <li>
-            <a href={resumeUrl} className="inline-block py-2 text-signal hover:underline">
-              Resume
+            <a
+              href={resumeUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block py-2 text-signal underline underline-offset-4 hover:no-underline"
+            >
+              Resume ↗
             </a>
           </li>
         )}

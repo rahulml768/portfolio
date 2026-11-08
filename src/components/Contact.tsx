@@ -29,6 +29,13 @@ export function Contact() {
                 </a>
               </li>
             ))}
+            {profile.resumeUrl && (
+              <li>
+                <a href={profile.resumeUrl} target="_blank" rel="noreferrer" className="underline underline-offset-4">
+                  Resume (PDF) ↗
+                </a>
+              </li>
+            )}
           </ul>
         )}
 

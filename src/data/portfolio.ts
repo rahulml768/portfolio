@@ -37,7 +37,7 @@ export const profile = {
     { label: "GitHub", href: "https://github.com/rahulml768" },
   ] as { label: string; href: string }[],
   // Drop a PDF into public/ and set this to "/your-file.pdf" to show a resume button.
-  resumeUrl: "",
+  resumeUrl: "/RahulMittal-Resume.pdf",
   headline: "Software that real operations run on.",
   intro:
     "I'm a full stack developer and AI engineer. I've built ERP modules, healthcare compliance platforms and AI products like Canvas Client, Agentra and Agent 69.",
