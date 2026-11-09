@@ -539,7 +539,7 @@ export const skills = [
     group: "AI",
     items: ["AI engineering", "Agentic AI", "Context engineering", "RAG", "LangChain", "AI agents in Python"],
   },
-  { group: "Languages", items: ["JavaScript", "TypeScript", "Python", "HTML", "CSS"] },
+  { group: "Languages", items: ["JavaScript", "TypeScript", "Python", "Apache Groovy", "HTML", "CSS"] },
   {
     group: "Frameworks & CMS",
     items: ["Node.js", "Express.js", "Next.js", "React.js", ".NET", "Socket.io", "jQuery", "WordPress"],
